@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Pearl</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="clickMeButton">Click me!</string>
+    <string name="MyText">Large Text</string>
+</resources>

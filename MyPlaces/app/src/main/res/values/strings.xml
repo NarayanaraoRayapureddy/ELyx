@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">My Places</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_addPlaces">Add Places</string>
+    <string name="action_deletePlaces">Delete Places</string>
+    <string name="view_in_maps">View in Maps</string>
+    <string name="delete">Delete</string>
+</resources>
