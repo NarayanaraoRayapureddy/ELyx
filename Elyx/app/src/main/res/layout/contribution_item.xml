@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_rectangle"
+    android:clickable="true"
+    android:divider="@color/dividerColor"
+    android:id="@+id/chat_item"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginRight="@dimen/activity_horizontal_margin"
+    android:layout_marginTop="@dimen/activity_vertical_margin"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingBottom="8dp"
+    android:paddingTop="8dp">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sonal"
+            android:id="@+id/doctor_name"
+            android:layout_gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/colorAccent"
+            android:textSize="14sp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="01/02/15"
+            android:id="@+id/datestamp"
+            android:layout_gravity="center_vertical|right"
+            android:textColor="@color/textColorSecondary"
+            android:layout_marginRight="0dp"
+            android:textSize="12sp" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="May be you should test for TSH and check the results"
+        android:id="@+id/symptoms"
+        android:layout_gravity="left"
+        android:layout_marginTop="5dp"
+        android:ellipsize="end"
+        android:textColor="@color/textColorPrimary"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="16sp"
+        android:layout_weight="1" />
+
+</LinearLayout>

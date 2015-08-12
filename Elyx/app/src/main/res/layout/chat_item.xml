@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:clickable="true"
+    android:divider="@color/dividerColor"
+    android:id="@+id/chat_item"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="8dp"
+    android:paddingTop="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/profilePic"
+        android:layout_gravity="left" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sonal"
+        android:id="@+id/doctor_name"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="20dp"
+        android:singleLine="true"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="18sp"
+        android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="01/02/15"
+            android:id="@+id/datestamp"
+            android:layout_gravity="center_vertical|right"
+            android:textColor="@color/textColorSecondary"
+            android:layout_marginRight="0dp"
+            android:textSize="12sp" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cough, Dizziness, Asthma"
+        android:id="@+id/symptoms"
+        android:layout_gravity="left"
+        android:layout_marginTop="5dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/textColorSecondary"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="M, 34, Hypertensive"
+        android:id="@+id/lifestyle"
+        android:layout_marginTop="2dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/textColorSecondary" />
+</LinearLayout>

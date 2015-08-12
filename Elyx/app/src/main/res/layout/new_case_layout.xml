@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_widget"
+        app:layout_scrollFlags="scroll|enterAlways"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_vertical_margin"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Age"
+            android:id="@+id/ageLabel"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/colorAccent" />
+
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="48dp"
+            android:inputType="number"
+            android:id="@+id/age"
+            android:maxLines="1"
+            android:hint="30"
+            android:layout_below="@+id/ageLabel"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Sex"
+                android:id="@+id/textView2"
+                android:textColor="@color/colorAccent"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/age"
+                android:layout_toEndOf="@+id/age"
+                android:layout_marginLeft="40dp"
+                android:layout_marginStart="40dp" />
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sex"
+                android:layout_alignLeft="@+id/textView2"
+                android:layout_alignStart="@+id/textView2"
+                android:layout_below="@+id/textView2"
+                android:layout_alignBottom="@+id/age"
+                android:spinnerMode="dropdown" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Lifestyle"
+            android:id="@+id/lifestyleLabel"
+            android:textColor="@color/colorAccent" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:inputType="text"
+                android:id="@+id/lifestyle"
+                android:layout_marginBottom="10dp"
+                android:hint="Athletic, software engineer etc." />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Speaciality"
+            android:id="@+id/textView4"
+            android:textColor="@color/colorAccent" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:inputType="text"
+            android:id="@+id/speciality"
+            android:layout_marginBottom="10dp"
+            android:hint="Cardiology, Oncology etc." />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Symptoms"
+            android:id="@+id/symptomsLabel"
+            android:textColor="@color/colorAccent" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:inputType="text"
+                android:id="@+id/symptoms"
+                android:layout_marginBottom="10dp"
+                android:hint="Cough, fever etc." />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Drugs"
+            android:id="@+id/drugsLabel"
+            android:textColor="@color/colorAccent" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:inputType="text"
+                android:id="@+id/drugs"
+                android:layout_marginBottom="10dp"
+                android:hint="Paracetamol, Albendazol etc." />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Investigations"
+            android:id="@+id/investigationsLabel"
+            android:textColor="@color/colorAccent" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:inputType="text"
+                android:id="@+id/investigations"
+                android:layout_marginBottom="10dp"
+                android:hint="ECG, T2, TSH etc." />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Images"
+            android:id="@+id/textView3"
+            android:textColor="@color/colorAccent" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/imageView" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+</ScrollView>
